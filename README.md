@@ -1,24 +1,25 @@
+## Welcome to Jotion!
+This project was created and closely follows the [tutorial](https://www.youtube.com/watch?v=0OaDyjB9Ib8&t=364s) by CodeWithAntonio. 
+Please check out his work and support his channel! 
+
+My account on Notion ran out of space...so I created a replica!
+It is officially deployed [here](https://jotion-taupe.vercel.app/), so check it out if you'd like 😊
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## For Local Deployment
+# Requirements
+Please set up an account for the following softwares if you have not already done so:
+* [Convex](https://www.convex.dev/) - the backend software for this project
+* [Clerk](https://clerk.com/) - for user authentication
+* [Edgestore](https://edgestore.dev/) - for uploading files
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Steps 
+1. Create a copy of the `.env.sample` file and rename it to be `.env.local` in your root directory.
+2. Find the values for the following variables in the above websites and paste them in your `.env.local` file.
+3. Run the development server using `npm run dev`.
+4. Open a new terminal and run the backend server using `npx convex dev`.
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Learn More
 
@@ -29,8 +30,9 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## For Production
+# Requirements
+The app is deployed using [vercel](https://vercel.com/). Set up an account there if you have not done so.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Steps
+You may follow a detailed tutorial [here](https://docs.convex.dev/production/hosting/vercel) on to deploy this app with vercel.
